@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>This Are The Shops</h2>
+    <hr>
+
+    {{#each places}}
+
+    <p>
+        * {{name}} 
+    </p>
+    <br>
+    <a href="#" class="btn btn-success col-1">Edit</a> 
+
+    <form action="/places/delete/{{id}}" method="POST">
+        <button type="submit" class="btn btn-danger btn-block col-1">Delete</button>
+    </form>
+
+
+    <hr>
+
+    {{/each}}
+
+    <a href="/" class="btn btn-dark">Home</a>
+</div>
